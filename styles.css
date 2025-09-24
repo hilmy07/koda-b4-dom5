@@ -69,3 +69,16 @@ main > div > div > button {
   cursor: pointer;
   background-color: transparent;
 }
+
+#display {
+  width: 200px;
+  display: block;
+  background-color: lightgray;
+  text-align: right;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 28px;
+  overflow-x: auto;
+  white-space: nowrap;
+  margin-left: 40px;
+}

@@ -11,29 +11,42 @@
       <h2>Simple Calculator</h2>
     </header>
     <main>
-      <h1 id="display"><b>0</b></h1>
-      <div>
+      <h1 id="display">0</h1>
+      <div class="calculator-grid">
         <div><button onclick="clearDisplay()">C</button></div>
         <div></div>
         <div></div>
         <div><button onclick="deleteLast()">DEL</button></div>
+
         <div><button onclick="appendValue('7')">7</button></div>
         <div><button onclick="appendValue('8')">8</button></div>
         <div><button onclick="appendValue('9')">9</button></div>
-        <div><button onclick="appendValue('/')">/</button></div>
+        <div>
+          <button class="operator" onclick="appendValue('/')">/</button>
+        </div>
+
         <div><button onclick="appendValue('4')">4</button></div>
         <div><button onclick="appendValue('5')">5</button></div>
         <div><button onclick="appendValue('6')">6</button></div>
-        <div><button onclick="appendValue('-')">-</button></div>
+        <div>
+          <button class="operator" onclick="appendValue('-')">-</button>
+        </div>
+
         <div><button onclick="appendValue('1')">1</button></div>
         <div><button onclick="appendValue('2')">2</button></div>
         <div><button onclick="appendValue('3')">3</button></div>
-        <div><button onclick="appendValue('*')">x</button></div>
+        <div>
+          <button class="operator" onclick="appendValue('*')">x</button>
+        </div>
+
         <div><button onclick="appendValue('.')">.</button></div>
         <div><button onclick="appendValue('0')">0</button></div>
         <div></div>
-        <div><button onclick="appendValue('+')">+</button></div>
-        <div style="grid-column: span 4">
+        <div>
+          <button class="operator" onclick="appendValue('+')">+</button>
+        </div>
+
+        <div class="equal-button" style="grid-column: span 4">
           <button
             onclick="calculateResult()"
             style="background-color: #00b894; color: white"
