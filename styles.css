@@ -1,0 +1,71 @@
+body > main > div {
+  display: grid;
+  grid-template-columns: repeat(4, 50px);
+  grid-template-rows: repeat(5, 50px);
+  gap: 10px;
+  margin-left: 30px;
+}
+body > main > div > div {
+  background-color: #f0f0f0;
+}
+header {
+  margin-left: 50px;
+}
+body > main > div > div:nth-child(18) {
+  grid-column: span 2;
+}
+body > main > div > div:nth-child(19) {
+  display: none;
+}
+body > main > div > div:nth-child(8),
+body > main > div > div:nth-child(12),
+body > main > div > div:nth-child(16),
+body > main > div > div:nth-child(20) {
+  background-color: #de14bd;
+}
+body > main > div > div:nth-child(8) > button,
+body > main > div > div:nth-child(12) > button,
+body > main > div > div:nth-child(16) > button,
+body > main > div > div:nth-child(20) > button {
+  color: white;
+}
+body > main {
+  margin-top: 50px;
+}
+body > main > div > div > p {
+  margin-left: 20px;
+}
+body > main > div > div:nth-child(18) > p {
+  margin-left: 50px;
+}
+body > main > div > div:nth-child(4) > p {
+  margin-left: 10px;
+}
+body > main > div > div:nth-child(1),
+body > main > div > div:nth-child(2),
+body > main > div > div:nth-child(3),
+body > main > div > div:nth-child(4) {
+  background-color: #fff;
+}
+body > main div > div {
+  border-radius: 5px;
+}
+body > main > h1 {
+  margin-left: 150px;
+}
+main p {
+  font-size: 16px;
+}
+body {
+  margin: 100px 50px;
+}
+main > div > div > button {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: transparent;
+}
